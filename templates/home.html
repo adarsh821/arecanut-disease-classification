@@ -1,0 +1,51 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Upload Image</title>
+    <style>
+      body{
+        background-image: url("https://images.unsplash.com/photo-1639288652561-68b0678429b4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170");
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+      
+        
+      }
+      .heading{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left:550px;
+        color:rgb(225, 231, 221);
+      }
+
+    </style>
+    
+</head>
+<body>
+
+
+    <div class="heading">
+      <h1> Arecanut Classification </h1>
+    </div>
+
+    <div class="col-sm">
+      <form action = "/predict" method = "post" enctype="multipart/form-data">
+        <button type="file" class="btn btn-success">Upload Image</button>
+        <br>
+      </br>
+          <!-- <input type="file" name="file" /> -->
+          <input type="file" name="file" />
+          <!-- <button class="btn-btn danger" Type="submit">Upload Image</button> -->
+          <button type="submit" class="btn btn-danger">Submit</button>
+          <!-- <input type = "submit" value="Upload"> -->
+      </form>
+    </div>
+
+
+
+</body>
+</html>
